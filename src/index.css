@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color:#e3f9ff;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 30vw;
+  top: 68px;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  position: relative;
+  left: 180px;
+  top: 130px;
 }
+
+.title {
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+.quote {
+  background: rgb(76, 164, 238);
+  background: linear-gradient(
+    207deg,
+    rgba(76, 164, 238, 1) 6%,
+    rgba(153, 46, 240, 0.966999299719888) 97%
+  );
+  height: 220px;
+  width: 450px;
+  position: relative;
+  top: 130px;
+  left: 25px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 5px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.quote p {
+  position: relative;
+  left: 0px;
+  top: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.generate {
+  cursor: pointer;
+  width: 16vw;
+  position: relative;
+  top: -65px;
+  left: -25px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color:#e3f9ff;
+}
+.generate:hover {
+  background-color: rgb(199, 188, 188);
+}
+.words {
+  text-align: center;
+}
+
+/* Media queries */
+
+/* Phone portrait */
+@media only screen and (max-width: 600px) {
+    .box {
+       width: 90vw;
+       height: 90vh;
+       position: relative;
+       left: -1vw;
+       top: -8vh;
+     }
+   
+    .button {
+       position: relative;
+       left: 40vw;
+       top: 20vh;
+     }
+   
+    .quote {
+       width: 90vw;
+       height: 48vh;
+       position: relative;
+       top: 40vh;
+       left: 18vw;
+     }
+   
+    .generate {
+       width: 40vw;
+       position: relative;
+       top: 11vh;
+       left: 6vw;
+       font-size: 24px;
+     }
+   }
+   
+   /* Phone landscape */
+   @media only screen and (max-width: 900px) and (orientation: landscape) {
+    .box {
+       width: 80vw;
+       height: 60vh;
+       position: relative;
+       left: 10vw;
+       top: 30vh;
+     }
+   
+    .button {
+       position: relative;
+       left: 30vw;
+       top: 15vh;
+     }
+   
+    .quote {
+       width: 70vw;
+       height: 45vh;
+       position: relative;
+       top: 15vh;
+       left: 15vw;
+     }
+   
+    .generate {
+       width: 18vw;
+       position: relative;
+       top: -14vh;
+       left: 12vw;
+       font-size: 18px;
+     }
+   }
+   
+   @media only screen and (min-width: 1024px) {
+    .box {
+       width: 90vw;
+       height: 90vh;
+       position: relative;
+       left: -1vw;
+       top: -8vh;
+     }
+   
+    .button {
+       position: relative;
+       left: 40vw;
+       top: 20vh;
+     }
+   
+    .quote {
+       width: 60vw;
+       height: 70vh;
+       position: relative;
+       top: 40vh;
+       left: 30vw;
+     }
+   
+    .generate {
+       width: 25vw;
+       position: relative;
+       top: 1vh;
+       left: 8vw;
+       font-size: 25px;
+     }
+   }
+   
+   /* Laptop */
+   @media only screen and (min-width: 1200px) {
+    .box {
+       width: 680px;
+       height: 600px;
+       position: relative;
+       left: 18vw;
+       top: 5vh;
+     }
+   
+    .button {
+       position: relative;
+       left: 350px;
+       top: 100px;
+     }
+   
+    .quote {
+       width: 600px;
+       height: 330px;
+       position: relative;
+       top: 100px;
+       left: 85px;
+     }
+   
+    .generate {
+       width: 150px;
+       position: relative;
+       top: -90px;
+       left: -60px;
+     }
+   }
